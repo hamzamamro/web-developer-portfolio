@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+@import "_color";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: $main-color;
+    font-family: 'Rufina', serif;
+}
+
+/*Start header section*/
+@import "_header";
+/*End header section*/
+
+section
+{
+    padding: 50px 100px;
+    min-height: 100vh;
+}
+
+/*Start main section*/
+@import '_main';
+/*End main section*/
+
+/*Start about section*/
+@import '_about';
+/*End about section*/
+
+/*Start contact section*/
+@import "_contact";
+/*End contact section*/
+
+/*Start footer section*/
+@import "_footer";
+/*End footer section*/
+
+@media (max-width: 575.98px){
+    section{
+        padding: 40px 50px;
+    }
+}
+
+@media (max-width: 290px){
+    section{
+        padding: 35px 45px;
+    }
+}
