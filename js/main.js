@@ -1,7 +1,7 @@
 var navBtn = $('#nav-btn');
 var navUlShow = $('.nav .active');
 var navUl = $('.nav ul');
-
+var navUlLi = $('.nav ul li');
 
 navBtn.on('click', function(){
     
@@ -13,6 +13,7 @@ navBtn.on('click', function(){
             height: '100%'
         });
 
+
     } else{
         $('html, body').css({
             overflow: 'auto',
@@ -21,8 +22,25 @@ navBtn.on('click', function(){
     }
 });
 
+navUlLi.on('click', function(){
+    if(navUl.hasClass('active')){
+        navUl.css({
+            visibility: 'hidden'
+        });
 
-console.log(navUlShow)
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
+
+        navUl.removeClass('active');
+
+        navUl.css({
+            visibility: 'visible'
+        });
+    } 
+});
+
 
 
 
