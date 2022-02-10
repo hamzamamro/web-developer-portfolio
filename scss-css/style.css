@@ -101,6 +101,12 @@ body {
   }
 }
 
+@media (max-width: 380px) {
+  .nav ul.active {
+    top: 15%;
+  }
+}
+
 /*End header section*/
 section {
   padding: 50px 100px;
@@ -237,6 +243,13 @@ section {
   .webs {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 380px) {
+  .webs .webs-img {
+    width: 200px;
+    height: 200px;
   }
 }
 

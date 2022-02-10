@@ -87,3 +87,9 @@
         background-color: $main-color;
     }
 }
+
+@media (max-width: 380px){
+    .nav ul.active{
+        top: 15%;
+    }
+}

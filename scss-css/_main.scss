@@ -130,3 +130,10 @@
         flex-wrap: nowrap;
     }
 }
+
+@media (max-width: 380px){
+    .webs .webs-img{
+        width: 200px;
+        height: 200px;
+    }
+}
